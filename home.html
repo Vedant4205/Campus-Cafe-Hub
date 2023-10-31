@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Canteen Selection</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Your Logo">
+        </div>
+        <div class="title">
+            <h1 style="margin-left: 10px;">WELCOME TO CAMPUS CAFE HUB</h1>
+        </div>
+    </header>
+    <main>
+        <section style="display: flex; justify-content: center; align-items: center;">
+            <h2>Select a cafe to order food:</h2>
+            <div class="select-container">
+                <select name="Canteens" id="canteenSelect" onchange="window.location.href=this.value;">
+                    <option value="">Select Canteen</option>
+                    <option value="canteenA.html">Canteen A</option>
+                    <option value="canteenB.html">Canteen B</option>
+                    <option value="canteenC.html">Canteen C</option>
+                    <option value="canteenD.html">Canteen D</option>
+                </select>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+    <script>
+        // JavaScript to enable the "View Menu" button
+        const canteenSelect = document.getElementById('canteenSelect');
+        const viewMenuButton = document.getElementById('viewMenuButton');
+
+        canteenSelect.addEventListener('change', function () {
+            viewMenuButton.removeAttribute('disabled');
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+/* Add your CSS styles here */
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.menu-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: white;
+  margin: 20px 0px;
+  border-radius: 3px;
+}
+
+.food-menu,
+.drink-menu {
+  flex: 1;
+  padding: 20px;
+}
+
+.food-menu>h2{
+  margin-bottom: 20px;
+  /* width: 150px; */
+  padding: 5px;
+  border-bottom: 3px solid dodgerblue;
+}
+.drink-menu>h2{
+  margin-bottom: 20px;
+  /* width: 150px; */
+  padding: 5px;
+  border-bottom: 3px solid dodgerblue;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.item>div {
+  margin-left: 15px;
+}
+.item>button {
+  margin-left: 15px;
+}
+.cart {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 20px;
+  border-radius: 3px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.cart>h2{
+  margin-bottom: 20px;
+  /* width: 150px; */
+  padding: 5px;
+  border-bottom: 3px solid dodgerblue;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+img {
+  height: 122px;
+  width: 122px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  /* position: absolute; */
+  /* bottom: 0; */
+  width: 95.3vw;
+}
